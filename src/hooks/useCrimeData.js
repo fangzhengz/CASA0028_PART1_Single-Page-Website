@@ -12,9 +12,9 @@ export const useCrimeData = (selectedMonth, selectedArea, selectedTypes = []) =>
   // === 2. Data extraction ===
   useEffect(() => {
     Promise.all([
-      fetch('/Final_Borough_Map.geojson').then(res => res.json()),
-      fetch('/london_crimes_2025_flexible.json').then(res => res.json()),
-      fetch('/socio_data.json').then(res => res.json()), 
+      fetch('./Final_Borough_Map.geojson').then(res => res.json()),
+      fetch('./london_crimes_2025_flexible.json').then(res => res.json()),
+      fetch('./socio_data.json').then(res => res.json()), 
     ])
       .then(([geo, crime, socio]) => {
         setGeoData(geo);
