@@ -1,18 +1,41 @@
-# React + Vite
+# London Crime Situation Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-success?style=for-the-badge&logo=github)](https://fangzhengz.github.io/CASA0028_PART1_Single-Page-Website/)
+[![React](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-Currently, two official plugins are available:
+An interactive, single-page geospatial dashboard designed to visualize and analyze crime data across Greater London. Built as part of the **UCL CASA0028** module, this platform provides actionable insights by seamlessly combining crime incident reports with local socio-economic demographics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Application
+**[Access the Live Dashboard Here](https://fangzhengz.github.io/CASA0028_PART1_Single-Page-Website/)**
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Key Features & Interactions
 
-Note: This will impact Vite dev & build performances.
+* **Interactive Choropleth Map**: A dynamic Leaflet map rendering London boroughs using GeoJSON. Color intensity scales automatically based on crime volume. Features hover states and click-to-select interactions.
+* **Cross-Dimensional Filtering**: 
+    * **Temporal Filter**: Filter data by specific months via the navigation bar or by clicking data points directly on the Trend Line Chart.
+    * **Categorical Filter**: Multi-select specific crime categories from the Bar Chart to update the map and overall statistics in real-time.
+* **Real-time Tactical Intelligence**: A floating top-left panel instantly calculates and displays total offences, positive outcomes, and policing efficiency rates for the selected combination of area, time, and crime types.
+* **Socio-Economic Profiling**: Clicking on a specific borough triggers a rich bottom-right panel revealing local demographic context, including median weekly pay, unemployment rates, and household deprivation metrics.
+* **Modern UI/UX**: Built with Tailwind CSS, featuring a sleek, tactical "dark-mode" layout and glassmorphism (backdrop-blur) effects for floating UI panels.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technology Stack
+
+* **Frontend Framework**: [React](https://react.dev/) (v19) 
+* **Build Tool**: [Vite](https://vitejs.dev/)
+* **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4)
+* **Geospatial Mapping**: [Leaflet](https://leafletjs.com/) & `react-leaflet`
+* **Data Visualization**: [Chart.js](https://www.chartjs.org/) & `react-chartjs-2`
+* **Deployment & Hosting**: GitHub Pages (`gh-pages`)
+
+---
+
+## Data Sources
+* **Crime Data**: data.police.uk (Street-level crime data for Metropolitan Police Service).
+* **Geospatial Boundaries**: London Borough boundaries provided in standard GeoJSON format.
+* **Demographics**: Open data from the Greater London Authority (GLA) / London Datastore.
