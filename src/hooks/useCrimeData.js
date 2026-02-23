@@ -23,7 +23,7 @@ export const useCrimeData = (selectedMonth, selectedArea, selectedTypes = []) =>
         setIsLoading(false);
       })
       .catch(err => {
-        console.error("数据加载失败:", err);
+        console.error("Data loading error:", err);
         setIsLoading(false);
       });
   }, []);
@@ -119,7 +119,7 @@ export const useCrimeData = (selectedMonth, selectedArea, selectedTypes = []) =>
     const typeData = {
       labels: sortedTypes.map(d => d.type),
       datasets: [{
-        label: '立案数',
+        label: 'Offences Number',
         data: sortedTypes.map(d => d.count),
         backgroundColor: sortedTypes.map(d => 
           selectedTypes.includes(d.type) ? '#2563eb' : '#ef4444'
