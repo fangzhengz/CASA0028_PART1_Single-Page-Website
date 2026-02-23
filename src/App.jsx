@@ -78,8 +78,8 @@ const App = () => {
              <span className="text-xl font-black">L</span>
           </div>
           <div>
-            <h1 className="text-lg font-black tracking-tight leading-none uppercase">London Crime Tactical</h1>
-            <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">Intelligence Dashboard 2025</p>
+            <h1 className="text-lg font-black tracking-tight leading-none uppercase">London Crime Situation Showcase</h1>
+            <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-1">Interactive Map 2025</p>
           </div>
         </div>
 
